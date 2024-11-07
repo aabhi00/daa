@@ -8,7 +8,7 @@ int lpalindromesubseq(const string &s){
     vector<vector<int>> dp(n, vector<int>(n, 0));
 
     // All substrings of length 1 are palindromes, so initialize the diagonal
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; i++) {
         dp[i][i] = 1;
     }
 
